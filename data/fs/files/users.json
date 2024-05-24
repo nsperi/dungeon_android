@@ -1,0 +1,18 @@
+[
+  {
+    "id": "eb2c7b38869b298053cf752d",
+    "name": "Naty",
+    "photo": "photo.png",
+    "email": "nsperipolli@gmail.com",
+    "password": "abc123",
+    "role": 0
+  },
+  {
+    "id": "01b340106d44b01a588113fb",
+    "name": "Pepi",
+    "photo": "photo.png",
+    "email": "pepi@gmail.com",
+    "password": "abc123",
+    "role": 0
+  }
+]
