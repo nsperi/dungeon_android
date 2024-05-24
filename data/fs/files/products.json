@@ -1,0 +1,18 @@
+[
+  {
+    "id": "6cc639dad59c50f638807b81",
+    "title": "comic 1",
+    "photo": "comic.pdf",
+    "category": "comics",
+    "price": 4000,
+    "stock": 200
+  },
+  {
+    "id": "dfa99ade240cd6e8a853658a",
+    "title": "comic 2",
+    "photo": "comic.pdf",
+    "category": "comics",
+    "price": 5000,
+    "stock": 400
+  }
+]
