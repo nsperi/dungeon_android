@@ -1,0 +1,162 @@
+[
+  {
+      "id": "1a2b3c4d5e6f7g8h9i0j1k2l",
+      "name": "Homer Simpson",
+      "photo": "homer.jpg",
+      "email": "homer@simpsons.com",
+      "password": "doh123",
+      "role": 0
+  },
+  {
+      "id": "2a3b4c5d6e7f8g9h0i1j2k3l",
+      "name": "Marge Simpson",
+      "photo": "marge.jpg",
+      "email": "marge@simpsons.com",
+      "password": "marge123",
+      "role": 0
+  },
+  {
+      "id": "3a4b5c6d7e8f9g0h1i2j3k4l",
+      "name": "Bart Simpson",
+      "photo": "bart.jpg",
+      "email": "bart@simpsons.com",
+      "password": "eatmyshorts",
+      "role": 0
+  },
+  {
+      "id": "4a5b6c7d8e9f0g1h2i3j4k5l",
+      "name": "Lisa Simpson",
+      "photo": "lisa.jpg",
+      "email": "lisa@simpsons.com",
+      "password": "saxophone",
+      "role": 0
+  },
+  {
+      "id": "5a6b7c8d9e0f1g2h3i4j5k6l",
+      "name": "Maggie Simpson",
+      "photo": "maggie.jpg",
+      "email": "maggie@simpsons.com",
+      "password": "pacifier",
+      "role": 0
+  },
+  {
+      "id": "6a7b8c9d0e1f2g3h4i5j6k7l",
+      "name": "Ned Flanders",
+      "photo": "ned.jpg",
+      "email": "ned@simpsons.com",
+      "password": "hididdlyho",
+      "role": 0
+  },
+  {
+      "id": "7a8b9c0d1e2f3g4h5i6j7k8l",
+      "name": "Montgomery Burns",
+      "photo": "burns.jpg",
+      "email": "burns@simpsons.com",
+      "password": "excellent",
+      "role": 0
+  },
+  {
+      "id": "8a9b0c1d2e3f4g5h6i7j8k9l",
+      "name": "Waylon Smithers",
+      "photo": "smithers.jpg",
+      "email": "smithers@simpsons.com",
+      "password": "burnslove",
+      "role": 0
+  },
+  {
+      "id": "9a0b1c2d3e4f5g6h7i8j9k0l",
+      "name": "Krusty the Clown",
+      "photo": "krusty.jpg",
+      "email": "krusty@simpsons.com",
+      "password": "heyhey",
+      "role": 0
+  },
+  {
+      "id": "0a1b2c3d4e5f6g7h8i9j0k1l",
+      "name": "Sideshow Bob",
+      "photo": "sideshowbob.jpg",
+      "email": "bob@simpsons.com",
+      "password": "revenge",
+      "role": 0
+  },
+  {
+      "id": "1b2c3d4e5f6g7h8i9j0k1l2a",
+      "name": "Apu Nahasapeemapetilon",
+      "photo": "apu.jpg",
+      "email": "apu@simpsons.com",
+      "password": "thankyoucomeagain",
+      "role": 0
+  },
+  {
+      "id": "2b3c4d5e6f7g8h9i0j1k2l3a",
+      "name": "Moe Szyslak",
+      "photo": "moe.jpg",
+      "email": "moe@simpsons.com",
+      "password": "drink123",
+      "role": 0
+  },
+  {
+      "id": "3b4c5d6e7f8g9h0i1j2k3l4a",
+      "name": "Chief Wiggum",
+      "photo": "wiggum.jpg",
+      "email": "wiggum@simpsons.com",
+      "password": "donuts",
+      "role": 0
+  },
+  {
+      "id": "4b5c6d7e8f9g0h1i2j3k4l5a",
+      "name": "Milhouse Van Houten",
+      "photo": "milhouse.jpg",
+      "email": "milhouse@simpsons.com",
+      "password": "everythingiscomingupmilhouse",
+      "role": 0
+  },
+  {
+      "id": "5b6c7d8e9f0g1h2i3j4k5l6a",
+      "name": "Principal Skinner",
+      "photo": "skinner.jpg",
+      "email": "skinner@simpsons.com",
+      "password": "steamedhams",
+      "role": 0
+  },
+  {
+      "id": "6b7c8d9e0f1g2h3i4j5k6l7a",
+      "name": "Edna Krabappel",
+      "photo": "krabappel.jpg",
+      "email": "krabappel@simpsons.com",
+      "password": "ha",
+      "role": 0
+  },
+  {
+      "id": "7b8c9d0e1f2g3h4i5j6k7l8a",
+      "name": "Ralph Wiggum",
+      "photo": "ralph.jpg",
+      "email": "ralph@simpsons.com",
+      "password": "chocolate",
+      "role": 0
+  },
+  {
+      "id": "8b9c0d1e2f3g4h5i6j7k8l9a",
+      "name": "Groundskeeper Willie",
+      "photo": "willie.jpg",
+      "email": "willie@simpsons.com",
+      "password": "scotland",
+      "role": 0
+  },
+  {
+      "id": "9b0c1d2e3f4g5h6i7j8k9l0a",
+      "name": "Troy McClure",
+      "photo": "troy.jpg",
+      "email": "troy@simpsons.com",
+      "password": "youmightrememberme",
+      "role": 0
+  },
+  {
+      "id": "0b1c2d3e4f5g6h7i8j9k0l1a",
+      "name": "Comic Book Guy",
+      "photo": "comicbookguy.jpg",
+      "email": "comicbookguy@simpsons.com",
+      "password": "worstepisodeever",
+      "role": 0
+  }
+]
