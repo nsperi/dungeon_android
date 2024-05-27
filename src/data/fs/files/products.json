@@ -1,0 +1,142 @@
+[
+    {
+        "title": "The Amazing Spider-Man #1",
+        "photo": "spiderman1.jpg",
+        "category": "Cómics",
+        "price": 300,
+        "stock": 10
+    },
+    {
+        "title": "Batman: The Killing Joke",
+        "photo": "batman_killing_joke.jpg",
+        "category": "Cómics",
+        "price": 250,
+        "stock": 15
+    },
+    {
+        "title": "X-Men: Days of Future Past",
+        "photo": "xmen_days_future_past.jpg",
+        "category": "Cómics",
+        "price": 200,
+        "stock": 8
+    },
+    {
+        "title": "Superman: Red Son",
+        "photo": "superman_red_son.jpg",
+        "category": "Cómics",
+        "price": 220,
+        "stock": 12
+    },
+    {
+        "title": "Star Wars: A New Hope #1",
+        "photo": "star_wars_new_hope.jpg",
+        "category": "Cómics",
+        "price": 180,
+        "stock": 20
+    },
+    {
+        "title": "Funko Pop! Iron Man",
+        "photo": "funko_iron_man.jpg",
+        "category": "Figuras",
+        "price": 350,
+        "stock": 30
+    },
+    {
+        "title": "Funko Pop! Darth Vader",
+        "photo": "funko_darth_vader.jpg",
+        "category": "Figuras",
+        "price": 350,
+        "stock": 25
+    },
+    {
+        "title": "Star Trek: The Original Series Blu-ray",
+        "photo": "star_trek_blu_ray.jpg",
+        "category": "Películas y Series",
+        "price": 500,
+        "stock": 5
+    },
+    {
+        "title": "The Lord of the Rings Trilogy DVD",
+        "photo": "lotr_trilogy_dvd.jpg",
+        "category": "Películas y Series",
+        "price": 450,
+        "stock": 7
+    },
+    {
+        "title": "Doctor Who Sonic Screwdriver",
+        "photo": "doctor_who_sonic_screwdriver.jpg",
+        "category": "Accesorios",
+        "price": 300,
+        "stock": 20
+    },
+    {
+        "title": "Harry Potter Wand",
+        "photo": "harry_potter_wand.jpg",
+        "category": "Accesorios",
+        "price": 200,
+        "stock": 25
+    },
+    {
+        "title": "Pokémon Trading Card Game Booster Pack",
+        "photo": "pokemon_tcg_booster.jpg",
+        "category": "Juegos de Cartas",
+        "price": 100,
+        "stock": 50
+    },
+    {
+        "title": "Magic: The Gathering Starter Kit",
+        "photo": "mtg_starter_kit.jpg",
+        "category": "Juegos de Cartas",
+        "price": 150,
+        "stock": 40
+    },
+    {
+        "title": "Dungeons & Dragons Player's Handbook",
+        "photo": "dnd_players_handbook.jpg",
+        "category": "Juegos de Mesa",
+        "price": 350,
+        "stock": 10
+    },
+    {
+        "title": "Monopoly: Marvel Edition",
+        "photo": "monopoly_marvel.jpg",
+        "category": "Juegos de Mesa",
+        "price": 300,
+        "stock": 12
+    },
+    {
+        "title": "The Legend of Zelda: Hyrule Historia",
+        "photo": "zelda_hyrule_historia.jpg",
+        "category": "Libros",
+        "price": 250,
+        "stock": 18
+    },
+    {
+        "title": "Ready Player One Novel",
+        "photo": "ready_player_one.jpg",
+        "category": "Libros",
+        "price": 180,
+        "stock": 20
+    },
+    {
+        "title": "Spider-Man T-Shirt",
+        "photo": "spiderman_tshirt.jpg",
+        "category": "Ropa",
+        "price": 200,
+        "stock": 15
+    },
+    {
+        "title": "Batman Hoodie",
+        "photo": "batman_hoodie.jpg",
+        "category": "Ropa",
+        "price": 350,
+        "stock": 10
+    },
+    {
+        "title": "Star Wars Poster",
+        "photo": "star_wars_poster.jpg",
+        "category": "Posters",
+        "price": 100,
+        "stock": 25
+    }
+]
