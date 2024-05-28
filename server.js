@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import { engine } from "express-handlebars";
+import path from "path"
 
 import indexRouter from "./src/router/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
@@ -13,9 +14,10 @@ const ready = () => console.log("server ready on port " + port);
 
 server.listen(port, ready);
 
-server.engine('handlebars', engine())
+server.engine("handlebars",engine())
 server.set('view engine', 'handlebars')
 server.set('views', __dirname+'/src/views')
+server.use(express.static(path.join(__dirname, 'public')))
 
 //middlewares
 server.use(express.urlencoded({ extended: true }));

@@ -53,15 +53,14 @@ class ProductManager {
 
   async readOne(id) {
     try {
-        let all = await fs.promises.readFile(this.path, "utf-8");
-        all = JSON.parse(all);
-        let product = all.find((each) => each.id === id);
-        return product;
+      let all = await fs.promises.readFile(this.path, "utf-8");
+      all = JSON.parse(all);
+      let product = all.find((each) => each.id === id);
+      return product;
     } catch (error) {
-        console.log(error);
-        return error
+      throw error;
     }
-}
+  }
 
   async update(id, data) {
     try {
