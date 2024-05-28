@@ -1,0 +1,290 @@
+[
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2l",
+        "title": "The Amazing Spider-Man #1",
+        "photo": "spiderman1.jpg",
+        "category": "Cómics",
+        "price": 300,
+        "stock": 10
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2m",
+        "title": "Batman: The Killing Joke",
+        "photo": "batman_killing_joke.jpg",
+        "category": "Cómics",
+        "price": 250,
+        "stock": 15
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2n",
+        "title": "X-Men: Days of Future Past",
+        "photo": "xmen_days_future_past.jpg",
+        "category": "Cómics",
+        "price": 200,
+        "stock": 8
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2o",
+        "title": "Superman: Red Son",
+        "photo": "superman_red_son.jpg",
+        "category": "Cómics",
+        "price": 220,
+        "stock": 12
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2p",
+        "title": "Star Wars: A New Hope #1",
+        "photo": "star_wars_new_hope.jpg",
+        "category": "Cómics",
+        "price": 180,
+        "stock": 20
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2q",
+        "title": "Funko Pop! Iron Man",
+        "photo": "funko_iron_man.jpg",
+        "category": "Figuras",
+        "price": 350,
+        "stock": 30
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2r",
+        "title": "Funko Pop! Darth Vader",
+        "photo": "funko_darth_vader.jpg",
+        "category": "Figuras",
+        "price": 350,
+        "stock": 25
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2s",
+        "title": "Star Trek: The Original Series Blu-ray",
+        "photo": "star_trek_blu_ray.jpg",
+        "category": "Películas y Series",
+        "price": 500,
+        "stock": 5
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2t",
+        "title": "The Lord of the Rings Trilogy DVD",
+        "photo": "lotr_trilogy_dvd.jpg",
+        "category": "Películas y Series",
+        "price": 450,
+        "stock": 7
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2u",
+        "title": "Doctor Who Sonic Screwdriver",
+        "photo": "doctor_who_sonic_screwdriver.jpg",
+        "category": "Accesorios",
+        "price": 300,
+        "stock": 20
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2v",
+        "title": "Harry Potter Wand",
+        "photo": "harry_potter_wand.jpg",
+        "category": "Accesorios",
+        "price": 200,
+        "stock": 25
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2w",
+        "title": "Pokémon Trading Card Game Booster Pack",
+        "photo": "pokemon_tcg_booster.jpg",
+        "category": "Juegos de Cartas",
+        "price": 100,
+        "stock": 50
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2x",
+        "title": "Magic: The Gathering Starter Kit",
+        "photo": "mtg_starter_kit.jpg",
+        "category": "Juegos de Cartas",
+        "price": 150,
+        "stock": 40
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2y",
+        "title": "Dungeons & Dragons Player's Handbook",
+        "photo": "dnd_players_handbook.jpg",
+        "category": "Juegos de Mesa",
+        "price": 350,
+        "stock": 10
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k2z",
+        "title": "Monopoly: Marvel Edition",
+        "photo": "monopoly_marvel.jpg",
+        "category": "Juegos de Mesa",
+        "price": 300,
+        "stock": 12
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k30",
+        "title": "The Legend of Zelda: Hyrule Historia",
+        "photo": "zelda_hyrule_historia.jpg",
+        "category": "Libros",
+        "price": 250,
+        "stock": 18
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k31",
+        "title": "Ready Player One Novel",
+        "photo": "ready_player_one.jpg",
+        "category": "Libros",
+        "price": 180,
+        "stock": 20
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k32",
+        "title": "Spider-Man T-Shirt",
+        "photo": "spiderman_tshirt.jpg",
+        "category": "Ropa",
+        "price": 200,
+        "stock": 15
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k33",
+        "title": "Iron Man Helmet Replica",
+        "photo": "iron_man_helmet.jpg",
+        "category": "Accesorios",
+        "price": 600,
+        "stock": 8
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k34",
+        "title": "Captain America Shield Replica",
+        "photo": "captain_america_shield.jpg",
+        "category": "Accesorios",
+        "price": 700,
+        "stock": 5
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k35",
+        "title": "Thor's Mjolnir Hammer Replica",
+        "photo": "thor_mjolnir_hammer.jpg",
+        "category": "Accesorios",
+        "price": 800,
+        "stock": 3
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k36",
+        "title": "Avengers: Infinity War Blu-ray",
+        "photo": "avengers_infinity_war_blu_ray.jpg",
+        "category": "Películas y Series",
+        "price": 550,
+        "stock": 10
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k37",
+        "title": "Guardians of the Galaxy Soundtrack Vinyl",
+        "photo": "gotg_soundtrack_vinyl.jpg",
+        "category": "Música",
+        "price": 40,
+        "stock": 20
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k38",
+        "title": "Deadpool Action Figure",
+        "photo": "deadpool_action_figure.jpg",
+        "category": "Figuras",
+        "price": 300,
+        "stock": 15
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k39",
+        "title": "The Joker Poster",
+        "photo": "joker_poster.jpg",
+        "category": "Posters",
+        "price": 80,
+        "stock": 25
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k40",
+        "title": "Spider-Man: Into the Spider-Verse Blu-ray",
+        "photo": "spiderman_into_the_spiderverse_blu_ray.jpg",
+        "category": "Películas y Series",
+        "price": 400,
+        "stock": 12
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k41",
+        "title": "Star Wars Lightsaber Replica",
+        "photo": "star_wars_lightsaber.jpg",
+        "category": "Accesorios",
+        "price": 900,
+        "stock": 6
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k42",
+        "title": "Doctor Strange Eye of Agamotto Replica",
+        "photo": "doctor_strange_eye_of_agamotto.jpg",
+        "category": "Accesorios",
+        "price": 750,
+        "stock": 4
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k43",
+        "title": "Game of Thrones: The Complete Series Blu-ray",
+        "photo": "game_of_thrones_complete_series_blu_ray.jpg",
+        "category": "Películas y Series",
+        "price": 800,
+        "stock": 8
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k44",
+        "title": "Harry Potter Scarf",
+        "photo": "harry_potter_scarf.jpg",
+        "category": "Ropa",
+        "price": 150,
+        "stock": 20
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k45",
+        "title": "Lord of the Rings Map Poster",
+        "photo": "lotr_map_poster.jpg",
+        "category": "Posters",
+        "price": 120,
+        "stock": 15
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k46",
+        "title": "Marvel Encyclopedia",
+        "photo": "marvel_encyclopedia.jpg",
+        "category": "Libros",
+        "price": 300,
+        "stock": 10
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k47",
+        "title": "DC Comics Encyclopedia",
+        "photo": "dc_comics_encyclopedia.jpg",
+        "category": "Libros",
+        "price": 250,
+        "stock": 12
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k48",
+        "title": "Nintendo Switch Console",
+        "photo": "nintendo_switch_console.jpg",
+        "category": "Consolas",
+        "price": 300,
+        "stock": 7
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k49",
+        "title": "PlayStation 5 Console",
+        "photo": "playstation5_console.jpg",
+        "category": "Consolas",
+        "price": 500,
+        "stock": 5
+    },
+    {
+        "id": "1a2b3c4d5e6f7g8h9i0j1k50",
+        "title": "Xbox Series X Console",
+        "photo": "xbox_seriesx_console.jpg",
+        "category": "Consolas",
+        "price": 450,
+        "stock": 6
+    }
+]

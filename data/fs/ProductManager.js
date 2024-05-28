@@ -1,7 +1,7 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from 'fs'
+import crypto from 'crypto'
 
-class ProductManager {
+export default class ProductManager {
   constructor() {
     this.path = "./files/products.json";
     this.init();
@@ -58,6 +58,40 @@ class ProductManager {
       console.log(error);
     }
   }
+
+  async update(id, data, next) {
+
+    try {
+
+        if(id === ':id') {
+            const error = new Error('Bad request: the ID parameter is required by the update method.')
+            error.statusCode = 400
+            throw error
+        }
+
+        let allProducts = await fs.promises.readFile(this.path, 'utf-8')
+        allProducts = JSON.parse(allProducts)
+        let productFound = allProducts.find( product => product.id === id)
+
+        if(!productFound) {
+            const error = new Error(`Not found: product ID ${id} not found.`)
+            error.statusCode = 404
+            throw error                
+        } else {
+
+            productFound = Object.assign(productFound, data)
+            allProducts = JSON.stringify(allProducts, null, 4)
+
+            await fs.promises.writeFile(this.path, allProducts)
+            console.log(`Product ID ${id} updated.`)
+            return productFound
+        }
+        
+    } catch (error) {
+        return next(error)
+    }    
+  }
+  
   async destroy(id) {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");

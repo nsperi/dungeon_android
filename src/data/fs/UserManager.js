@@ -1,19 +1,16 @@
-import fs from 'fs'
-import crypto from 'crypto'
+import fs from 'fs';
+import crypto from 'crypto';
 
-export default class UserManager {
+class UserManager {
   constructor() {
-    this.path = "./files/users.json";
+    this.path = "./src/data/fs/files/users.json";
     this.init();
   }
   init() {
     const exists = fs.existsSync(this.path);
     if (!exists) {
-      const stringData = JSON.stringify([], null, 2);
-      fs.writeFileSync(this.path, stringData);
-      console.log("Archivo creado");
-    } else {
-        console.log('Archivo ya existe');
+        const stringData = JSON.stringify([], null, 2);
+        fs.writeFileSync(this.path, stringData);
     }
   }
 
@@ -43,6 +40,17 @@ export default class UserManager {
     }
   }
 
+  async read(role) {
+    try {
+      let all = await fs.promises.readFile(this.path, "utf-8");
+      all = JSON.parse(all);
+      role && (all = all.filter(each => each.role === role))
+      return all;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   async readOne(id) {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
@@ -59,22 +67,26 @@ export default class UserManager {
     }
   }
 
-  async update(id, data){
-    try{
-        let all = await this.read()
-        let one = all.find(each=>each.id===id)
-        if (one){
-            for(let prop in data){
-                one[prop] = data[prop]
-            }
+  async update(id, data) {
+    try {
+      let all = await this.read();
+      let one = all.find((each) => each.id === id);
+      if (one) {
+        for (let prop in data) {
+          one[prop] = data[prop];
         }
-        all = JSON.stringify(all, null,2)
-        await fs.promises.writeFile(this.path, all)
-        return one
-    }catch(error){
-        throw error
+        all = JSON.stringify(all, null, 2);
+        await fs.promises.writeFile(this.path, all);
+        return one;
+      } else {
+        const error = new Error("Not found");
+        error.statusCode = 404;
+        throw error;
+      }
+    } catch (error) {
+      throw error;
     }
-}
+  }
 
   async destroy(id) {
     try {
@@ -88,7 +100,7 @@ export default class UserManager {
         filtered = JSON.stringify(filtered, null, 2);
         await fs.promises.writeFile(this.path, filtered);
         console.log({ deleted: user.id });
-        return note;
+        return user;
       }
     } catch (error) {
       console.log(error);
@@ -96,26 +108,29 @@ export default class UserManager {
   }
 }
 
-async function test() {
-    try {
-      const users = new UserManager();
-      await users.create({ 
-        name: "Naty",
-        photo: "photo.png",
-        email: "nsperipolli@gmail.com",
-        password: "abc123", 
-    });
-      await users.create({
-        name: "Pepi",
-        photo: "photo.png",
-        email: "pepi@gmail.com",
-        password: "abc123",
-      });
-      await users.read();
-      //await users.readOne("eb2c7b38869b298053cf752d");
-      //await users.destroy("eb2c7b38869b298053cf752d");
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  test();
+const userManager = new UserManager()
+export default userManager
+
+// async function test() {
+//     try {
+//       const users = new UserManager();
+//       await users.create({ 
+//         name: "Naty",
+//         photo: "photo.png",
+//         email: "nsperipolli@gmail.com",
+//         password: "abc123", 
+//     });
+//       await users.create({
+//         name: "Pepi",
+//         photo: "photo.png",
+//         email: "pepi@gmail.com",
+//         password: "abc123",
+//       });
+//       await users.read();
+//       //await users.readOne("eb2c7b38869b298053cf752d");
+//       //await users.destroy("eb2c7b38869b298053cf752d");
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+//   test();
