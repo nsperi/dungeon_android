@@ -2,7 +2,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2l",
         "title": "The Amazing Spider-Man #1",
-        "photo": "spiderman1.jpg",
+        "photo": "https://m.media-amazon.com/images/I/61OldqqLvCL.jpg",
         "category": "Cómics",
         "price": 300,
         "stock": 10
@@ -10,7 +10,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2m",
         "title": "Batman: The Killing Joke",
-        "photo": "batman_killing_joke.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91OjBx3hSNL._SY522_.jpg",
         "category": "Cómics",
         "price": 250,
         "stock": 15
@@ -18,7 +18,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2n",
         "title": "X-Men: Days of Future Past",
-        "photo": "xmen_days_future_past.jpg",
+        "photo": "https://m.media-amazon.com/images/I/914oJa0FwZL._SY522_.jpg",
         "category": "Cómics",
         "price": 200,
         "stock": 8
@@ -26,7 +26,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2o",
         "title": "Superman: Red Son",
-        "photo": "superman_red_son.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81JVemsiHxL._AC_UF894,1000_QL80_.jpg",
         "category": "Cómics",
         "price": 220,
         "stock": 12
@@ -34,7 +34,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2p",
         "title": "Star Wars: A New Hope #1",
-        "photo": "star_wars_new_hope.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81Y2elLjhML._SY522_.jpg",
         "category": "Cómics",
         "price": 180,
         "stock": 20
@@ -42,7 +42,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2q",
         "title": "Funko Pop! Iron Man",
-        "photo": "funko_iron_man.jpg",
+        "photo": "https://m.media-amazon.com/images/I/71IO+L6PRHL._AC_SX679_.jpg",
         "category": "Figuras",
         "price": 350,
         "stock": 30
@@ -50,7 +50,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2r",
         "title": "Funko Pop! Darth Vader",
-        "photo": "funko_darth_vader.jpg",
+        "photo": "https://m.media-amazon.com/images/I/71KYDRBRUFL._AC_SX679_.jpg",
         "category": "Figuras",
         "price": 350,
         "stock": 25
@@ -58,7 +58,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2s",
         "title": "Star Trek: The Original Series Blu-ray",
-        "photo": "star_trek_blu_ray.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91mIk3ymOjL._AC_SX679_.jpg",
         "category": "Películas y Series",
         "price": 500,
         "stock": 5
@@ -66,7 +66,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2t",
         "title": "The Lord of the Rings Trilogy DVD",
-        "photo": "lotr_trilogy_dvd.jpg",
+        "photo": "https://m.media-amazon.com/images/I/71fmPkn8fML._AC_SY879_.jpg",
         "category": "Películas y Series",
         "price": 450,
         "stock": 7
@@ -74,7 +74,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2u",
         "title": "Doctor Who Sonic Screwdriver",
-        "photo": "doctor_who_sonic_screwdriver.jpg",
+        "photo": "https://www.character-online.com/images/thumbs/0019574_doctor-who-the-fourteenth-doctors-sonic-screwdriver.jpeg",
         "category": "Accesorios",
         "price": 300,
         "stock": 20
@@ -82,7 +82,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2v",
         "title": "Harry Potter Wand",
-        "photo": "harry_potter_wand.jpg",
+        "photo": "https://m.media-amazon.com/images/I/71XbbIZpzpS.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         "category": "Accesorios",
         "price": 200,
         "stock": 25
@@ -90,7 +90,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2w",
         "title": "Pokémon Trading Card Game Booster Pack",
-        "photo": "pokemon_tcg_booster.jpg",
+        "photo": "https://i.ebayimg.com/images/g/DJEAAOSwwO9f6c5r/s-l640.jpg",
         "category": "Juegos de Cartas",
         "price": 100,
         "stock": 50
@@ -98,7 +98,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2x",
         "title": "Magic: The Gathering Starter Kit",
-        "photo": "mtg_starter_kit.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81g1ZkNcCTL._AC_SX679_.jpg",
         "category": "Juegos de Cartas",
         "price": 150,
         "stock": 40
@@ -106,7 +106,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2y",
         "title": "Dungeons & Dragons Player's Handbook",
-        "photo": "dnd_players_handbook.jpg",
+        "photo": "https://m.media-amazon.com/images/I/B1dbNFOQu8S._SY522_.jpg",
         "category": "Juegos de Mesa",
         "price": 350,
         "stock": 10
@@ -114,7 +114,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k2z",
         "title": "Monopoly: Marvel Edition",
-        "photo": "monopoly_marvel.jpg",
+        "photo": "https://m.media-amazon.com/images/I/814yklNcOwL._AC_SX679_.jpg",
         "category": "Juegos de Mesa",
         "price": 300,
         "stock": 12
@@ -122,7 +122,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k30",
         "title": "The Legend of Zelda: Hyrule Historia",
-        "photo": "zelda_hyrule_historia.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81ZaSDTF0XL._SY522_.jpg",
         "category": "Libros",
         "price": 250,
         "stock": 18
@@ -130,7 +130,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k31",
         "title": "Ready Player One Novel",
-        "photo": "ready_player_one.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91FGDm7MfIL._SY522_.jpg",
         "category": "Libros",
         "price": 180,
         "stock": 20
@@ -138,7 +138,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k32",
         "title": "Spider-Man T-Shirt",
-        "photo": "spiderman_tshirt.jpg",
+        "photo": "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7CA1I5XOQWmDL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png",
         "category": "Ropa",
         "price": 200,
         "stock": 15
@@ -146,7 +146,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k33",
         "title": "Iron Man Helmet Replica",
-        "photo": "iron_man_helmet.jpg",
+        "photo": "https://m.media-amazon.com/images/I/51FyVBKSo-L._AC_SX679_.jpg",
         "category": "Accesorios",
         "price": 600,
         "stock": 8
@@ -154,7 +154,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k34",
         "title": "Captain America Shield Replica",
-        "photo": "captain_america_shield.jpg",
+        "photo": "https://m.media-amazon.com/images/I/716JcTrTMQL._AC_SX679_.jpg",
         "category": "Accesorios",
         "price": 700,
         "stock": 5
@@ -162,7 +162,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k35",
         "title": "Thor's Mjolnir Hammer Replica",
-        "photo": "thor_mjolnir_hammer.jpg",
+        "photo": "https://m.media-amazon.com/images/I/51Ddb0qnddL._AC_SX679_.jpg",
         "category": "Accesorios",
         "price": 800,
         "stock": 3
@@ -170,7 +170,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k36",
         "title": "Avengers: Infinity War Blu-ray",
-        "photo": "avengers_infinity_war_blu_ray.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81GIBVvDeaL._AC_SX679_.jpg",
         "category": "Películas y Series",
         "price": 550,
         "stock": 10
@@ -178,7 +178,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k37",
         "title": "Guardians of the Galaxy Soundtrack Vinyl",
-        "photo": "gotg_soundtrack_vinyl.jpg",
+        "photo": "https://m.media-amazon.com/images/I/714uWiPwbjL._AC_SX679_.jpg",
         "category": "Música",
         "price": 40,
         "stock": 20
@@ -186,7 +186,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k38",
         "title": "Deadpool Action Figure",
-        "photo": "deadpool_action_figure.jpg",
+        "photo": "https://a-static.mlcdn.com.br/800x560/action-figure-deadpool-articulado-gamer-verse-dead-pool-actioncollection/actionkrypton/ka214/aadbdd91d35ccbbfb16cc4071760f938.jpeg",
         "category": "Figuras",
         "price": 300,
         "stock": 15
@@ -194,7 +194,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k39",
         "title": "The Joker Poster",
-        "photo": "joker_poster.jpg",
+        "photo": "https://i.ebayimg.com/images/g/dhIAAOSw~gRVw4yu/s-l1200.webp",
         "category": "Posters",
         "price": 80,
         "stock": 25
@@ -202,7 +202,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k40",
         "title": "Spider-Man: Into the Spider-Verse Blu-ray",
-        "photo": "spiderman_into_the_spiderverse_blu_ray.jpg",
+        "photo": "https://m.media-amazon.com/images/I/81c0eC8LiLL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "category": "Películas y Series",
         "price": 400,
         "stock": 12
@@ -210,7 +210,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k41",
         "title": "Star Wars Lightsaber Replica",
-        "photo": "star_wars_lightsaber.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91jByJC-boL._AC_SY879_.jpg",
         "category": "Accesorios",
         "price": 900,
         "stock": 6
@@ -218,7 +218,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k42",
         "title": "Doctor Strange Eye of Agamotto Replica",
-        "photo": "doctor_strange_eye_of_agamotto.jpg",
+        "photo": "https://m.media-amazon.com/images/I/61LIW+dAxpL._AC_SX679_.jpg",
         "category": "Accesorios",
         "price": 750,
         "stock": 4
@@ -226,7 +226,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k43",
         "title": "Game of Thrones: The Complete Series Blu-ray",
-        "photo": "game_of_thrones_complete_series_blu_ray.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91wn+Av0LGL._AC_SY879_.jpg",
         "category": "Películas y Series",
         "price": 800,
         "stock": 8
@@ -234,7 +234,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k44",
         "title": "Harry Potter Scarf",
-        "photo": "harry_potter_scarf.jpg",
+        "photo": "https://m.media-amazon.com/images/I/61Q7Hr+PM0L._AC_SX679_.jpg",
         "category": "Ropa",
         "price": 150,
         "stock": 20
@@ -242,7 +242,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k45",
         "title": "Lord of the Rings Map Poster",
-        "photo": "lotr_map_poster.jpg",
+        "photo": "https://m.media-amazon.com/images/I/51QI9k2NDjL._SX342_SY445_.jpg",
         "category": "Posters",
         "price": 120,
         "stock": 15
@@ -250,7 +250,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k46",
         "title": "Marvel Encyclopedia",
-        "photo": "marvel_encyclopedia.jpg",
+        "photo": "https://m.media-amazon.com/images/I/61+tBpkhJRL._SX342_SY445_.jpg",
         "category": "Libros",
         "price": 300,
         "stock": 10
@@ -258,7 +258,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k47",
         "title": "DC Comics Encyclopedia",
-        "photo": "dc_comics_encyclopedia.jpg",
+        "photo": "https://m.media-amazon.com/images/I/91TV5JDB2HL._SY522_.jpg",
         "category": "Libros",
         "price": 250,
         "stock": 12
@@ -266,7 +266,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k48",
         "title": "Nintendo Switch Console",
-        "photo": "nintendo_switch_console.jpg",
+        "photo": "https://m.media-amazon.com/images/I/61-PblYntsL._SX679_.jpg",
         "category": "Consolas",
         "price": 300,
         "stock": 7
@@ -274,7 +274,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k49",
         "title": "PlayStation 5 Console",
-        "photo": "playstation5_console.jpg",
+        "photo": "https://m.media-amazon.com/images/I/51eOztNdCkL._AC_SX679_.jpg",
         "category": "Consolas",
         "price": 500,
         "stock": 5
@@ -282,7 +282,7 @@
     {
         "id": "1a2b3c4d5e6f7g8h9i0j1k50",
         "title": "Xbox Series X Console",
-        "photo": "xbox_seriesx_console.jpg",
+        "photo": "https://m.media-amazon.com/images/I/516pVDAQMnL._AC_SX679_.jpg",
         "category": "Consolas",
         "price": 450,
         "stock": 6
