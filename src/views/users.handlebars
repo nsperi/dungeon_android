@@ -1,4 +1,4 @@
-<h1 class="text-center my-2">Usuarios</h1>
+<h1 class="text-center my-2">USERS</h1>
 
 <div class='row row-cols-1 row-cols-md-3 mb-3 text-center'>
     {{#each users}}
@@ -13,6 +13,9 @@
                 <div class='card-body'>
                     <h5>{{this.email}}</h5>
                 </div>
+                <a href="/users/{{this.id}}" class='w-100 btn btn-lg btn-outline-primary'>
+                        View details
+                </a>
             </div>
         </div>
     {{/each}}
