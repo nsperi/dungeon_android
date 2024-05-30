@@ -1,6 +1,8 @@
 <h1>DETAILS OF THE USER {{user.id}}</h1>
 {{#if user}}
   <p>Name: {{user.name}}</p>
+  <img src={{user.photo}} alt={{user.name}}>
+  <p>E-mail: {{user.email}}</p>
   <p>Role: {{user.role}}</p>
 {{else}}
   <p>User not found</p>

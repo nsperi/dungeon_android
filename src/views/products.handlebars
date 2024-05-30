@@ -1,4 +1,4 @@
-<h1>PRODUCTS</h1>
+<h1 class="text-center my-2">PRODUCTS</h1>
 <div class='row row-cols-1 row-cols-md-3 mb-3 text-center'>
     {{#each products}}
         <div class='col'>
@@ -14,7 +14,7 @@
                     <h6 class='card-title'>
                         ${{this.price}}
                     </h6>
-                    <a href="/products/{{this._id}}" class='w-100 btn btn-lg btn-outline-primary'>
+                    <a href="/products/{{this.id}}" class='w-100 btn btn-lg btn-outline-primary'>
                         View details
                     </a>
                 </div>
@@ -22,5 +22,6 @@
         </div>
     {{/each}}
 </div>
+
 
 //01:08

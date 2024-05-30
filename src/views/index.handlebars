@@ -1,23 +1,48 @@
-<h1>THE ANDROID'S DUNGEON</h1>
-<section>
-    <article id="register"></article>
-    <article id="users"></article>
-</section>
-<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
-<script>
-    const socket = io();
-    socket.on("users", data => {
-        console.log(data)
-        let template = ``
-        template = data.map(each=> `
-            <div class="card" style="width: 18rem;">
-                <h2 class="card-title">${each.name}</h2>
-                <img src="${each.photo}" class="card-img-top" alt="${each.id}">
-                <div class="card-body">
-                    <h5 class="card-title">${each.email}</h5>
-                </div>
-            </div> `
-        )
-        document.querySelector("#users").innerHTML = template
-        })
-</script>
+<h1 class="text-center my-2">Welcome to The Android's Dungeon!</h1>
+<h2 class="text-center my-2">"Worst. Episode. Ever."</h2>
+
+<div class="d-flex flex-column justify-content-center align-items-center row-gap-4 px-4 mt-2 mb-4">
+    <h3>Explore our categories</h3>
+    <div>
+    <a href='/api/products?category=Comics' title="Comics" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/comics.webp" alt="Comics" />
+    </a>
+
+    <a href='/api/products?category=Figures' title="Figures" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/figures.jpg" alt="Figures" />
+    </a>
+
+    <a href='/api/products?category=Movies%20and%20Series' title="Movies and Series" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/movies.jpg" alt="Movies and Series" />
+    </a>
+
+    <a href='/api/products?category=Accessories' title="Accessories" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/accessories.webp" alt="Accessories" />
+    </a>
+
+    <a href='/api/products?category=Card%20Games' title="Card Games" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/cards.jpg" alt="Card Games" />
+    </a>
+
+    <a href='/api/products?category=Board%20Games' title="Board Games" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/boardgame.jpg" alt="Board Games" />
+    </a>
+
+    <a href='/api/products?category=Books' title="Books" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/books.jpg" alt="Books" />
+    </a>
+
+    <a href='/api/products?category=Clothing' title="Clothing" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/shirt.jpg" alt="Clothing" />
+    </a>
+
+    <a href='/api/products?category=Posters' title="Posters" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/posters.png" alt="Posters" />
+    </a>
+
+    <a href='/api/products?category=Consoles' title="Consoles" style="text-decoration: none;">
+        <img class='bg-secondary-subtle rounded rounded-3 me-4' style='height: 80px' src="/images/categories/station.jpg" alt="Consoles" />
+    </a>
+</div>
+    
+</div>
