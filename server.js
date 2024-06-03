@@ -10,10 +10,14 @@ import socketCb from "./src/router/index.socket.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
 import pathHander from "./src/middlewares/pathHandler.mid.js";
 import __dirname from "./utils.js";
+import dbConnect from "./src/utils/dbConnect.js";
 
 const server = express();
 const port = 8080;
-const ready = () => console.log("server ready on port " + port);
+const ready = async () => {
+    console.log("server ready on port " + port);
+    await dbConnect();
+}
 const nodeServer = createServer(server)
 server.listen(port, ready);
 const socketServer = new Server(nodeServer)
