@@ -11,6 +11,7 @@ import socketCb from "./src/router/index.socket.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
 import pathHander from "./src/middlewares/pathHandler.mid.js";
 import __dirname from "./utils.js";
+
 import dbConnect from "./src/utils/dbConnect.util.js";
 
 const server = express();
@@ -20,6 +21,7 @@ const ready = async () => {
   await dbConnect();
 };
 const nodeServer = createServer(server);
+
 server.listen(port, ready);
 const socketServer = new Server(nodeServer);
 socketServer.on("connection", socketCb);
