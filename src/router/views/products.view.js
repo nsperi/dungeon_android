@@ -13,6 +13,17 @@ productsRouter.get("/", async(req, res, next)=>{
       }
     });
 
+productsRouter.get('/real', async (_request, response, next) => {
+    try {
+    
+        return response.render('productsLoad')
+    
+    } catch (error) {
+        return next(error)
+            
+    }
+})
+
 productsRouter.get("/:pid", async (req, res, next) => {
     try {
         const { pid } = req.params;
