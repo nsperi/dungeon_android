@@ -1,9 +1,11 @@
+import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import morgan from "morgan";
 import { engine } from "express-handlebars";
-import path from "path"
+import path from "path";
+import session from "express-session"
 
 import indexRouter from "./src/router/index.router.js";
 import socketCb from "./src/router/index.socket.js";
@@ -28,10 +30,16 @@ server.set('view engine', 'handlebars')
 server.set('views', __dirname+'/src/views')
 server.use(express.static(path.join(__dirname, 'public')))
 
-//middlewares
+//middlewaress
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 server.use(morgan("dev"));
+server.use(session({
+    secret: process.env.SECRET_SESSION,
+    resave: true,
+    saveUninitialized: true,
+    cookie: {maxAge: 60 * 60 * 1000},
+}));
 
 //endpoints
 server.use("/", indexRouter);
