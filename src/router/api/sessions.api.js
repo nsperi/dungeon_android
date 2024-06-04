@@ -35,13 +35,23 @@ sessionsRouter.get("/online", async (req, res, next) => {
   }
 });
 
-sessionsRouter.post("/signout", (req, res, next)=>{
-    try {
+sessionsRouter.post("/logout", (req, res, next)=>{
+  try {
+    if(req.session) {
         req.session.destroy()
-        return res.json({statusCode:200, message:"Signed out"})
-    } catch (error) {
-        return next(error)
-    }
+        return res.json({
+            statusCode: 200,
+            message: '¡Signing out!'
+        })
+    } else {
+        return res.json({
+            statusCode: 401,
+            message: '¡Bad auth on logout!'
+        })
+    }        
+} catch (error) {
+    return next(error)
+}
 })
 
 export default sessionsRouter;
