@@ -1,7 +1,10 @@
-function errorHandler(error, req, res, next) {
-  return res.json({
+function errorHandler(error, _request, response, _next) {
+  console.error("An error has ocurred: ", error);
+
+  return response.json({
     statusCode: error.statusCode || 500,
-    message: error.message || "API ERROR",
+    succes: false,
+    message: error.message || "API error",
   });
 }
 
