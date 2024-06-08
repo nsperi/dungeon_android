@@ -14,6 +14,17 @@ usersRouter.get("/", async(req, res, next)=>{
       }
     });
 
+usersRouter.get('/real', async (req, res, next) => {
+    try {
+    
+        return res.render('realUsers')
+    
+    } catch (error) {
+        return next(error)
+            
+    }
+})
+
 usersRouter.get("/:uid", async (req, res, next) => {
     try {
         const { uid } = req.params;

@@ -1,162 +1,162 @@
 [
-    {
-        "id": "1a2b3c4d5e6f7g8h9i0j1k2l",
-        "name": "Homer Simpson",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/0/02/Homer_Simpson_2006.png",
-        "email": "homer@simpsons.com",
-        "password": "doh123",
-        "role": 0
-    },
-    {
-        "id": "2a3b4c5d6e7f8g9h0i1j2k3l",
-        "name": "Marge Simpson",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/0/0b/Marge_Simpson.png",
-        "email": "marge@simpsons.com",
-        "password": "marge123",
-        "role": 0
-    },
-    {
-        "id": "3a4b5c6d7e8f9g0h1i2j3k4l",
-        "name": "Bart Simpson",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/a/aa/Bart_Simpson_200px.png",
-        "email": "bart@simpsons.com",
-        "password": "eatmyshorts",
-        "role": 0
-    },
-    {
-        "id": "4a5b6c7d8e9f0g1h2i3j4k5l",
-        "name": "Lisa Simpson",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/6/67/Lisa_Simpson_personagem.png",
-        "email": "lisa@simpsons.com",
-        "password": "saxophone",
-        "role": 0
-    },
-    {
-        "id": "5a6b7c8d9e0f1g2h3i4j5k6l",
-        "name": "Maggie Simpson",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/9/9d/Maggie_Simpson.png",
-        "email": "maggie@simpsons.com",
-        "password": "pacifier",
-        "role": 0
-    },
-    {
-        "id": "6a7b8c9d0e1f2g3h4i5j6k7l",
-        "name": "Ned Flanders",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png",
-        "email": "ned@simpsons.com",
-        "password": "hididdlyho",
-        "role": 0
-    },
-    {
-        "id": "7a8b9c0d1e2f3g4h5i6j7k8l",
-        "name": "Montgomery Burns",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png",
-        "email": "burns@simpsons.com",
-        "password": "excellent",
-        "role": 0
-    },
-    {
-        "id": "8a9b0c1d2e3f4g5h6i7j8k9l",
-        "name": "Waylon Smithers",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/8/86/Waylon_Smithers_1.png",
-        "email": "smithers@simpsons.com",
-        "password": "burnslove",
-        "role": 0
-    },
-    {
-        "id": "9a0b1c2d3e4f5g6h7i8j9k0l",
-        "name": "Krusty the Clown",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/8/80/Krusty_personagem.png",
-        "email": "krusty@simpsons.com",
-        "password": "heyhey",
-        "role": 0
-    },
-    {
-        "id": "0a1b2c3d4e5f6g7h8i9j0k1l",
-        "name": "Sideshow Bob",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png",
-        "email": "bob@simpsons.com",
-        "password": "revenge",
-        "role": 0
-    },
-    {
-        "id": "1b2c3d4e5f6g7h8i9j0k1l2a",
-        "name": "Apu Nahasapeemapetilon",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/2/23/Apu_Nahasapeemapetilon_%28The_Simpsons%29.png",
-        "email": "apu@simpsons.com",
-        "password": "thankyoucomeagain",
-        "role": 0
-    },
-    {
-        "id": "2b3c4d5e6f7g8h9i0j1k2l3a",
-        "name": "Moe Szyslak",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/8/80/Moe_Szyslak.png",
-        "email": "moe@simpsons.com",
-        "password": "drink123",
-        "role": 0
-    },
-    {
-        "id": "3b4c5d6e7f8g9h0i1j2k3l4a",
-        "name": "Chief Wiggum",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Chief_Wiggum.png",
-        "email": "wiggum@simpsons.com",
-        "password": "donuts",
-        "role": 0
-    },
-    {
-        "id": "4b5c6d7e8f9g0h1i2j3k4l5a",
-        "name": "Milhouse Van Houten",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/1/11/Milhouse_Van_Houten.png",
-        "email": "milhouse@simpsons.com",
-        "password": "everythingiscomingupmilhouse",
-        "role": 0
-    },
-    {
-        "id": "5b6c7d8e9f0g1h2i3j4k5l6a",
-        "name": "Principal Skinner",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/3/3a/Seymour_Skinner.png",
-        "email": "skinner@simpsons.com",
-        "password": "steamedhams",
-        "role": 0
-    },
-    {
-        "id": "6b7c8d9e0f1g2h3i4j5k6l7a",
-        "name": "Edna Krabappel",
-        "photo": "https://www.eluniverso.com/resizer/1pciNgOn-M1N4DquUFvh9wrss5c=/500x500/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/WKVCFWNQFVEP7EJLWEP64KX2DI.jpg",
-        "email": "krabappel@simpsons.com",
-        "password": "ha",
-        "role": 0
-    },
-    {
-        "id": "7b8c9d0e1f2g3h4i5j6k7l8a",
-        "name": "Ralph Wiggum",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/1/14/Ralph_Wiggum.png",
-        "email": "ralph@simpsons.com",
-        "password": "chocolate",
-        "role": 0
-    },
-    {
-        "id": "8b9c0d1e2f3g4h5i6j7k8l9a",
-        "name": "Groundskeeper Willie",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/d/dc/GroundskeeperWillie.png",
-        "email": "willie@simpsons.com",
-        "password": "scotland",
-        "role": 0
-    },
-    {
-        "id": "9b0c1d2e3f4g5h6i7j8k9l0a",
-        "name": "Troy McClure",
-        "photo": "https://upload.wikimedia.org/wikipedia/pt/6/6c/Troymcclure.png",
-        "email": "troy@simpsons.com",
-        "password": "youmightrememberme",
-        "role": 0
-    },
-    {
-        "id": "0b1c2d3e4f5g6h7i8j9k0l1a",
-        "name": "Comic Book Guy",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/7/79/The_Simpsons-Jeff_Albertson.png",
-        "email": "comicbookguy@simpsons.com",
-        "password": "worstepisodeever",
-        "role": 0
-    }
-  ]
+  {
+      "id": "1a2b3c4d5e6f7g8h9i0j1k2l",
+      "name": "Homer Simpson",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/0/02/Homer_Simpson_2006.png",
+      "email": "homer@simpsons.com",
+      "password": "doh123",
+      "role": "customer"
+  },
+  {
+      "id": "2a3b4c5d6e7f8g9h0i1j2k3l",
+      "name": "Marge Simpson",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/0/0b/Marge_Simpson.png",
+      "email": "marge@simpsons.com",
+      "password": "marge123",
+      "role": "customer"
+  },
+  {
+      "id": "3a4b5c6d7e8f9g0h1i2j3k4l",
+      "name": "Bart Simpson",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/a/aa/Bart_Simpson_200px.png",
+      "email": "bart@simpsons.com",
+      "password": "eatmyshorts",
+      "role": "customer"
+  },
+  {
+      "id": "4a5b6c7d8e9f0g1h2i3j4k5l",
+      "name": "Lisa Simpson",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/6/67/Lisa_Simpson_personagem.png",
+      "email": "lisa@simpsons.com",
+      "password": "saxophone",
+      "role": "customer"
+  },
+  {
+      "id": "5a6b7c8d9e0f1g2h3i4j5k6l",
+      "name": "Maggie Simpson",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/9/9d/Maggie_Simpson.png",
+      "email": "maggie@simpsons.com",
+      "password": "pacifier",
+      "role": "customer"
+  },
+  {
+      "id": "6a7b8c9d0e1f2g3h4i5j6k7l",
+      "name": "Ned Flanders",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png",
+      "email": "ned@simpsons.com",
+      "password": "hididdlyho",
+      "role": "customer"
+  },
+  {
+      "id": "7a8b9c0d1e2f3g4h5i6j7k8l",
+      "name": "Montgomery Burns",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png",
+      "email": "burns@simpsons.com",
+      "password": "excellent",
+      "role": "customer"
+  },
+  {
+      "id": "8a9b0c1d2e3f4g5h6i7j8k9l",
+      "name": "Waylon Smithers",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/8/86/Waylon_Smithers_1.png",
+      "email": "smithers@simpsons.com",
+      "password": "burnslove",
+      "role": "customer"
+  },
+  {
+      "id": "9a0b1c2d3e4f5g6h7i8j9k0l",
+      "name": "Krusty the Clown",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/8/80/Krusty_personagem.png",
+      "email": "krusty@simpsons.com",
+      "password": "heyhey",
+      "role": "customer"
+  },
+  {
+      "id": "0a1b2c3d4e5f6g7h8i9j0k1l",
+      "name": "Sideshow Bob",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png",
+      "email": "bob@simpsons.com",
+      "password": "revenge",
+      "role": "customer"
+  },
+  {
+      "id": "1b2c3d4e5f6g7h8i9j0k1l2a",
+      "name": "Apu Nahasapeemapetilon",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/2/23/Apu_Nahasapeemapetilon_%28The_Simpsons%29.png",
+      "email": "apu@simpsons.com",
+      "password": "thankyoucomeagain",
+      "role": "customer"
+  },
+  {
+      "id": "2b3c4d5e6f7g8h9i0j1k2l3a",
+      "name": "Moe Szyslak",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/8/80/Moe_Szyslak.png",
+      "email": "moe@simpsons.com",
+      "password": "drink123",
+      "role": "customer"
+  },
+  {
+      "id": "3b4c5d6e7f8g9h0i1j2k3l4a",
+      "name": "Chief Wiggum",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Chief_Wiggum.png",
+      "email": "wiggum@simpsons.com",
+      "password": "donuts",
+      "role": "customer"
+  },
+  {
+      "id": "4b5c6d7e8f9g0h1i2j3k4l5a",
+      "name": "Milhouse Van Houten",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/1/11/Milhouse_Van_Houten.png",
+      "email": "milhouse@simpsons.com",
+      "password": "everythingiscomingupmilhouse",
+      "role": "customer"
+  },
+  {
+      "id": "5b6c7d8e9f0g1h2i3j4k5l6a",
+      "name": "Principal Skinner",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/3/3a/Seymour_Skinner.png",
+      "email": "skinner@simpsons.com",
+      "password": "steamedhams",
+      "role": "customer"
+  },
+  {
+      "id": "6b7c8d9e0f1g2h3i4j5k6l7a",
+      "name": "Edna Krabappel",
+      "photo": "https://www.eluniverso.com/resizer/1pciNgOn-M1N4DquUFvh9wrss5c=/500x500/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/WKVCFWNQFVEP7EJLWEP64KX2DI.jpg",
+      "email": "krabappel@simpsons.com",
+      "password": "ha",
+      "role": "customer"
+  },
+  {
+      "id": "7b8c9d0e1f2g3h4i5j6k7l8a",
+      "name": "Ralph Wiggum",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/1/14/Ralph_Wiggum.png",
+      "email": "ralph@simpsons.com",
+      "password": "chocolate",
+      "role": "customer"
+  },
+  {
+      "id": "8b9c0d1e2f3g4h5i6j7k8l9a",
+      "name": "Groundskeeper Willie",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/d/dc/GroundskeeperWillie.png",
+      "email": "willie@simpsons.com",
+      "password": "scotland",
+      "role": "customer"
+  },
+  {
+      "id": "9b0c1d2e3f4g5h6i7j8k9l0a",
+      "name": "Troy McClure",
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/6/6c/Troymcclure.png",
+      "email": "troy@simpsons.com",
+      "password": "youmightrememberme",
+      "role": "customer"
+  },
+  {
+      "id": "0b1c2d3e4f5g6h7i8j9k0l1a",
+      "name": "Comic Book Guy",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/7/79/The_Simpsons-Jeff_Albertson.png",
+      "email": "comicbookguy@simpsons.com",
+      "password": "worstepisodeever",
+      "role": "admin"
+  }
+]
