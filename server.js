@@ -1,19 +1,3 @@
-import "dotenv/config";
-import express from "express";
-import { createServer } from "http";
-import { Server } from "socket.io";
-import morgan from "morgan";
-import { engine } from "express-handlebars";
-import path from "path";
-import session from "express-session"
-
-import indexRouter from "./src/router/index.router.js";
-import socketCb from "./src/router/index.socket.js";
-import errorHandler from "./src/middlewares/errorHandler.mid.js";
-import pathHander from "./src/middlewares/pathHandler.mid.js";
-import __dirname from "./utils.js";
-import dbConnect from "./src/utils/dbConnect.js";
-
 const server = express();
 const port = 8080;
 const ready = async () => {
