@@ -1,17 +1,12 @@
-function isUserPhoto ( request, _response, next) {
-
+function isPhoto(req, res, next) {
     try {
-
-        if(request.file) {
-            request.body.photo = '/uploadedImages/' + request.file.filename
-        } 
-        
-        return next()
-
+      if (req.file) {
+        req.body.photo = "/public/images/" + req.file.filename;
+      }
+      return next();
     } catch (error) {
-        return next(error)
+      return next(error);
     }
-
-}
-
-export default isUserPhoto
+  }
+  
+  export default isPhoto;

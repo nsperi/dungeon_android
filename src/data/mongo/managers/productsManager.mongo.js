@@ -1,5 +1,5 @@
-import Manager from '../Manager.mongo.js';
-import ProductModel from '../models/product.model.js';
+import Product from "../models/product.model.js";
+import Manager from "../Manager.mongo.js";
 
-const productManager = new Manager(ProductModel);
+const productManager = new Manager(Product);
 export default productManager;

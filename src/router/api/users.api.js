@@ -1,12 +1,14 @@
 import { Router } from "express";
-//import userManager from "../../data/fs/UserManager.js";
-import userManager from "../../data/mongo/managers/usersManager.mongo.js";
+//import userManager from "../../data/fs/UserManager.js"
+import userManager from "../../data/mongo/managers/usersManager.mongo.js"
+import uploader from "../../middlewares/multer.mid.js";
+import isPhoto from "../../middlewares/isPhoto.mid.js"
 
 const usersRouter = Router();
 
 usersRouter.get("/", read);
 usersRouter.get("/:uid", readOne);
-usersRouter.post("/", create);
+usersRouter.post("/", uploader.single("photo"), isPhoto, create);
 usersRouter.put("/:uid", update);
 usersRouter.delete("/:uid", destroy);
 
@@ -33,7 +35,7 @@ async function create(req, res, next) {
           response: all,
         });
       } else {
-        const error = new Error("User not found!");
+        const error = new Error("Not found!");
         error.statusCode = 404;
         throw error;
       }
@@ -52,7 +54,7 @@ async function create(req, res, next) {
           response: one,
         });
       } else {
-        const error = new Error("User not found!");
+        const error = new Error("Not found!");
         error.statusCode = 404;
         throw error;
       }
@@ -60,7 +62,7 @@ async function create(req, res, next) {
       return next(error);
     }
   }
-  
+
   async function update(req, res, next) {
     try {
       const { uid } = req.params;
@@ -74,7 +76,7 @@ async function create(req, res, next) {
       return next(error);
     }
   }
-  
+
   async function destroy(req, res, next) {
     try {
       const { uid } = req.params;
@@ -88,4 +90,4 @@ async function create(req, res, next) {
     }
   }
 
-export default usersRouter;
+  export default usersRouter;

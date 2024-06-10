@@ -1,18 +1,38 @@
-import { Schema, model } from "mongoose";
+import { Schema, Types, model } from "mongoose";
+import mongoosePaginate from "mongoose-paginate-v2";
 
-const collection = 'products';
+const collection = "products";
 const schema = new Schema(
-    {
-        title: { type: String, required: true, index: true },
-        photo: { type: String, default: '/images/no_profile_photo.svg' },
-        category: { type: String, default: 'comics', enum: ['comics', 'figures', 'movies and series', 'accessories', 'card games', 'board games', 'books', 'clothing', 'posters', 'consoles'], index: true },
-        price: { type: Number, default: 1},
-        stock: { type: Number, default: 1}
-    },{
-        timestamps: true
-    }
-)
+  {
+    text: { type: String, required: true },
+    category: {
+      type: String,
+      default: "customer",
+      enum: ["customer", "done"],
+      index: true,
+    },
+    user_id: {
+      type: Types.ObjectId,
+      ref: "users",
+      index: true,
+      required: true,
+    },
+    user: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-const ProductModel = model(collection, schema)
+schema.plugin(mongoosePaginate);
 
-export default ProductModel
+schema.pre("find", function () {
+  this.populate("user_id", "email photo -_id");
+});
+schema.pre("findOne", function () {
+  this.populate("user_id", "email");
+});
+
+
+const Product = model(collection, schema);
+export default Product;
