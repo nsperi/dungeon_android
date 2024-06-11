@@ -2,7 +2,7 @@ import { verifyToken } from "../utils/token.util.js";
 
 function isAuth(req, res, next) {
     try {
-      const { token } = req.cookies;
+      const { token } = req.headers;
       console.log(token);
       const data = verifyToken(token);
       console.log(data);

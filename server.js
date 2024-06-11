@@ -1,10 +1,12 @@
-import "dotenv/config.js";
+import environment from "./src/utils/env.util.js";
 import express from "express";
-import { createServer } from "http";
-import { Server } from "socket.io";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
+import cors from "cors";
+
+import argsUtil from "./src/utils/args.util.js";
 import session from "express-session";
+import MongoStore from "connect-mongo";
 import { engine } from "express-handlebars";
 
 import indexRouter from "./src/router/index.router.js";
@@ -15,34 +17,29 @@ import __dirname from "./utils.js";
 import dbConnect from "./src/utils/dbConnect.util.js";
 
 const server = express();
-const port = process.env.PORT || 8080;
+const port = environment.PORT || argsUtil.p;
 const ready = async () => {
     console.log("server ready on port " + port);
     await dbConnect();
-  };
-const nodeServer = createServer(server);
-nodeServer.listen(port, ready);
-
-const socketServer = new Server(nodeServer);
-socketServer.on("connection", socketCb);
-export { socketServer };
-
-server.engine("handlebars",engine())
-server.set('view engine', 'handlebars')
-server.set('views', __dirname+'/src/views')
+};
+server.listen(port, ready);
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(__dirname + "/public"));
 server.use(morgan("dev"))
-server.use(session({
-  secret: process.env.SECRET_SESSION,
-  resave: true,
-  saveUninitialized: true,
-  cookie: {maxAge: 60 * 60 * 1000},
-}));
+// server.use(
+//   session({
+//     store: new MongoStore({ mongoUrl: process.env.MONGO_URI, ttl: 60 * 60 }),
+//     secret: process.env.SECRET_SESSION,
+//     resave: true,
+//     saveUninitialized: true,
+//   })
+// );
+server.use(cors({origin: true, credentials: true}));
 
 //endpoints
 server.use("/", indexRouter);
 server.use(errorHandler);
 server.use(pathHandler);
+
