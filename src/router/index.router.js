@@ -6,6 +6,10 @@ import fork from "child_process"
 
 class IndexRouter extends CustomRouter{
     init() {
+      this.read("/", ["PUBLIC"], (req, res, next) => {
+        // Manejar la solicitud a la ruta raíz aquí
+        res.send("¡Hola desde la ruta raíz!");
+    });
         this.use("/api", apiRouter)
         this.read("/fork", ["PUBLIC"], (req, res, next)=>{
             try {

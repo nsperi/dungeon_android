@@ -7,3 +7,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@layer base {
+  :root {
+    --color-primary: #eab308;
+    --color-secondary: #7dd3fc;
+    /* ... */
+  }
+}
