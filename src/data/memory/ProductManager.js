@@ -1,5 +1,5 @@
 class ProductsManager {
-	static #products = []
+  static #products = [];
   async create(data) {
     try {
       if (!data.title || !data.description) {
@@ -19,6 +19,27 @@ class ProductsManager {
       throw error;
     }
   }
+
+  async paginate({ page = 1, limit = 10, category }) {
+    try {
+      let all = await this.read(category);
+      const total = all.length;
+      const start = (page - 1) * limit;
+      const end = page * limit;
+      const paginatedItems = all.slice(start, end);
+      const totalPages = Math.ceil(total / limit);
+      return {
+        total,
+        page,
+        totalPages,
+        limit,
+        items: paginatedItems,
+      };
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   async readOne(id) {
     try {
       let one = ProductsManager.#products.find((each) => each.id === id);
@@ -44,7 +65,9 @@ class ProductsManager {
     try {
       let one = ProductsManager.#products.find((each) => each.id === id);
       if (one) {
-        ProductsManager.#products = ProductsManager.#products.filter((each) => each.id !== id);
+        ProductsManager.#products = ProductsManager.#products.filter(
+          (each) => each.id !== id
+        );
       }
       return one;
     } catch (error) {

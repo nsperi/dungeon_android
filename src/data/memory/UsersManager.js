@@ -38,6 +38,26 @@ class UsersManager {
     }
   }
 
+  async paginate({ page = 1, limit = 10, role }) {
+    try {
+      let all = await this.read(role);
+      const total = all.length;
+      const start = (page - 1) * limit;
+      const end = page * limit;
+      const paginatedItems = all.slice(start, end);
+      const totalPages = Math.ceil(total / limit);
+      return {
+        total,
+        page,
+        totalPages,
+        limit,
+        items: paginatedItems,
+      };
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   async readOne(id) {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
@@ -51,6 +71,18 @@ class UsersManager {
       }
     } catch (error) {
       console.log(error);
+    }
+  }
+
+  async readByEmail(email) {
+    try {
+      let all = await fs.promises.readFile(this.path, "utf-8");
+      all = JSON.parse(all);
+      let user = all.find((each) => each.email === email);
+      return user;
+    } catch (error) {
+      console.log(error);
+      throw error;
     }
   }
 

@@ -1,5 +1,5 @@
-import fs from 'fs';
-import crypto from 'crypto';
+import fs from "fs";
+import crypto from "crypto";
 
 class ProductManager {
   constructor() {
@@ -9,23 +9,23 @@ class ProductManager {
   init() {
     const exists = fs.existsSync(this.path);
     if (!exists) {
-        const stringData = JSON.stringify([], null, 2);
-        fs.writeFileSync(this.path, stringData);
+      const stringData = JSON.stringify([], null, 2);
+      fs.writeFileSync(this.path, stringData);
     }
   }
 
   async create(data) {
     try {
-      if (!data.title, !data.category, !data.price, !data.stock) {
-        throw new Error('Ingrese todos los datos');
+      if ((!data.title, !data.category, !data.price, !data.stock)) {
+        throw new Error("Ingrese todos los datos");
       } else {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
-          title : data.title,
-          photo : data.photo,
-          category : data.category,
-          price : data.price,
-          stock : data.stock
+          title: data.title,
+          photo: data.photo,
+          category: data.category,
+          price: data.price,
+          stock: data.stock,
         };
         let all = await fs.promises.readFile(this.path, "utf-8");
         all = JSON.parse(all);
@@ -44,8 +44,28 @@ class ProductManager {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
       all = JSON.parse(all);
-      cat && (all = all.filter(each => each.category === cat))
+      cat && (all = all.filter((each) => each.category === cat));
       return all;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async paginate({ page = 1, limit = 10, category }) {
+    try {
+      let all = await this.read(category);
+      const total = all.length;
+      const start = (page - 1) * limit;
+      const end = page * limit;
+      const paginatedItems = all.slice(start, end);
+      const totalPages = Math.ceil(total / limit);
+      return {
+        total,
+        page,
+        totalPages,
+        limit,
+        items: paginatedItems,
+      };
     } catch (error) {
       console.log(error);
     }
@@ -103,13 +123,13 @@ class ProductManager {
   }
 }
 
-const productManager = new ProductManager()
-export default productManager
+const productManager = new ProductManager();
+export default productManager;
 
 // async function test() {
 //     try {
 //       const products = new ProductManager();
-//       await products.create({ 
+//       await products.create({
 //         title: "comic 1",
 //         photo: "comic.pdf",
 //         category: "comics",

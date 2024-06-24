@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import environment from "./src/utils/env.util.js";
 import express from "express";
 import morgan from "morgan";
@@ -19,15 +22,15 @@ import dbConnect from "./src/utils/dbConnect.util.js";
 const server = express();
 const port = environment.PORT || argsUtil.p;
 const ready = async () => {
-    console.log("server ready on port " + port);
-    await dbConnect();
+  console.log("server ready on port " + port);
+  //await dbConnect();
 };
 server.listen(port, ready);
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(__dirname + "/public"));
-server.use(morgan("dev"))
+server.use(morgan("dev"));
 // server.use(
 //   session({
 //     store: new MongoStore({ mongoUrl: process.env.MONGO_URI, ttl: 60 * 60 }),
@@ -36,10 +39,9 @@ server.use(morgan("dev"))
 //     saveUninitialized: true,
 //   })
 // );
-server.use(cors({origin: true, credentials: true}));
+server.use(cors({ origin: true, credentials: true }));
 
 //endpoints
 server.use("/", indexRouter);
 server.use(errorHandler);
 server.use(pathHandler);
-

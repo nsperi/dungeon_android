@@ -1,5 +1,5 @@
-import fs from 'fs';
-import crypto from 'crypto';
+import fs from "fs";
+import crypto from "crypto";
 
 class UserManager {
   constructor() {
@@ -9,15 +9,15 @@ class UserManager {
   init() {
     const exists = fs.existsSync(this.path);
     if (!exists) {
-        const stringData = JSON.stringify([], null, 2);
-        fs.writeFileSync(this.path, stringData);
+      const stringData = JSON.stringify([], null, 2);
+      fs.writeFileSync(this.path, stringData);
     }
   }
 
   async create(data) {
     try {
-      if (!data.name, !data.email, !data.password) {
-        throw new Error('Ingrese todos los datos');
+      if ((!data.name, !data.email, !data.password)) {
+        throw new Error("Ingrese todos los datos");
       } else {
         const user = {
           id: crypto.randomBytes(12).toString("hex"),
@@ -44,8 +44,28 @@ class UserManager {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
       all = JSON.parse(all);
-      role && (all = all.filter(each => each.role === role))
+      role && (all = all.filter((each) => each.role === role));
       return all;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async paginate({ page = 1, limit = 10, role }) {
+    try {
+      let all = await this.read(role);
+      const total = all.length;
+      const start = (page - 1) * limit;
+      const end = page * limit;
+      const paginatedItems = all.slice(start, end);
+      const totalPages = Math.ceil(total / limit);
+      return {
+        total,
+        page,
+        totalPages,
+        limit,
+        items: paginatedItems,
+      };
     } catch (error) {
       console.log(error);
     }
@@ -64,6 +84,18 @@ class UserManager {
       }
     } catch (error) {
       console.log(error);
+    }
+  }
+
+  async readByEmail(email) {
+    try {
+      let all = await fs.promises.readFile(this.path, "utf-8");
+      all = JSON.parse(all);
+      let user = all.find((each) => each.email === email);
+      return user;
+    } catch (error) {
+      console.log(error);
+      throw error;
     }
   }
 
@@ -108,17 +140,17 @@ class UserManager {
   }
 }
 
-const userManager = new UserManager()
-export default userManager
+const userManager = new UserManager();
+export default userManager;
 
 // async function test() {
 //     try {
 //       const users = new UserManager();
-//       await users.create({ 
+//       await users.create({
 //         name: "Naty",
 //         photo: "photo.png",
 //         email: "nsperipolli@gmail.com",
-//         password: "abc123", 
+//         password: "abc123",
 //     });
 //       await users.create({
 //         name: "Pepi",
