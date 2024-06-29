@@ -9,7 +9,9 @@
     "dev": "nodemon ./server.js --env dev",
     "argv": "nodemon ./server.js -p 8080 --env=prod --persistence memory",
     "memory": "nodemon ./server.js -p 8081 --env=prod --persistence memory",
-    "fs": "nodemon ./server.js -p 8082 --env=prod --persistence fs"
+    "fs": "nodemon ./server.js -p 8082 --env=prod --persistence fs",
+    "users": "node ./src/mocks/users.mock.js",
+    "products": "node ./src/mocks/products.mock.js"
   },
   "keywords": [],
   "author": "",
@@ -36,5 +38,8 @@
     "session-file-store": "^1.5.0",
     "socket.io": "^4.7.5",
     "twilio": "^5.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
   }
 }

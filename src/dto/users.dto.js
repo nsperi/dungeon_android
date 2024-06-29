@@ -14,7 +14,7 @@ class UsersDTO {
     this.role = data.role || "customer";
     this.photo = data.photo || "../../public/images/no_photo_user.jpg";
     (this.verify = false),
-      (this.verifyCode = crypto.randomBytes[12].toString("ascii"));
+      (this.verifyCode = crypto.randomBytes(12).toString("ascii"));
   }
 }
 
