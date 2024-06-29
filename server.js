@@ -6,6 +6,7 @@ import express from "express";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import compression from "express-compression";
 
 import argsUtil from "./src/utils/args.util.js";
 import session from "express-session";
@@ -40,6 +41,11 @@ server.use(morgan("dev"));
 //   })
 // );
 server.use(cors({ origin: true, credentials: true }));
+server.use(
+  compression({
+    brotli: { enabled: true, zlib: {} },
+  })
+);
 
 //endpoints
 server.use("/", indexRouter);
