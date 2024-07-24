@@ -32,6 +32,28 @@ class IndexRouter extends CustomRouter {
         return next(error);
       }
     });
+    this.read("/simplex", ["PUBLIC"], (req, res, next) => {
+      try {
+        let total = 1;
+        for (let i = 1; i < 100; i++) {
+          total = i * i;
+        }
+        return res.send({ total });
+      } catch (error) {
+        return next(error);
+      }
+    });
+    this.read("/complex", ["PUBLIC"], (req, res, next) => {
+      try {
+        let total = 1;
+        for (let i = 1; i < 2000000000; i++) {
+          total = i * i;
+        }
+        return res.send({ total });
+      } catch (error) {
+        return next(error);
+      }
+    });
   }
 }
 

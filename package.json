@@ -11,7 +11,11 @@
     "memory": "nodemon ./server.js -p 8081 --env=prod --persistence memory",
     "fs": "nodemon ./server.js -p 8082 --env=prod --persistence fs",
     "users": "node ./src/mocks/users.mock.js",
-    "products": "node ./src/mocks/products.mock.js"
+    "products": "node ./src/mocks/products.mock.js",
+    "simplex": "artillery quick --count 20 --num 100 'http://localhost:8080/simplex' -o ./test/artillery/simplex.json",
+    "complex": "artillery quick --count 20 --num 100 'http://localhost:8080/complex' -o ./test/artillery/complex.json",
+    "flow": "artillery run ./test/artillery/flow.yaml -o ./test/artillery/flow.json",
+    "report": "artillery report ./test/artillery/flow.json"
   },
   "keywords": [],
   "author": "",
@@ -38,7 +42,8 @@
     "passport-local": "^1.0.0",
     "session-file-store": "^1.5.0",
     "socket.io": "^4.7.5",
-    "twilio": "^5.2.0"
+    "twilio": "^5.2.0",
+    "winston": "^3.13.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1"

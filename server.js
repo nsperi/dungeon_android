@@ -3,7 +3,7 @@ dotenv.config();
 
 import environment from "./src/utils/env.util.js";
 import express from "express";
-import morgan from "morgan";
+//import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import compression from "express-compression";
@@ -13,6 +13,7 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 import { engine } from "express-handlebars";
 
+import winston from "./src/middlewares/winston.mid.js"
 import indexRouter from "./src/router/index.router.js";
 import socketCb from "./src/router/index.socket.js";
 import errorHandler from "./src/middlewares/errorHandles.mid.js";
@@ -31,7 +32,7 @@ server.listen(port, ready);
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(__dirname + "/public"));
-server.use(morgan("dev"));
+server.use(winston);
 // server.use(
 //   session({
 //     store: new MongoStore({ mongoUrl: process.env.MONGO_URI, ttl: 60 * 60 }),

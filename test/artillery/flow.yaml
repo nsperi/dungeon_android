@@ -1,0 +1,25 @@
+config:
+  pluggins:
+    metrics-by-endpoint : {}
+  target: http://localhost:8080/api
+  phases:
+    - duration: 10
+      arrivalRate: 50
+scenarios:
+  - name: login
+    flow:
+      - log: login
+      - post: 
+          url: /auth/login
+          json:
+            email: nsperipolli@gmail.com
+            password: hola1234
+      - log: read all products
+      - get:
+          url: /products
+      - log: create product
+      - post:
+          url: /products
+          json:
+            title: "Spider Man"
+            category: "Comics"

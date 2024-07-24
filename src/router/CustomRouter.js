@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { verifyToken } from "../utils/token.util.js";
 import userManager from "../data/mongo/managers/usersManager.mongo.js";
+import winston from "../utils/winston.util.js";
 
 class CustomRouter {
   constructor() {
@@ -30,14 +31,34 @@ class CustomRouter {
     res.paginate = (response, info) =>
       res.json({ statusCode: 200, response, info });
     res.message201 = (message) => res.json({ statusCode: 201, message });
-    res.error400 = (message) => res.json({ statusCode: 400, message });
-    res.error401 = () =>
-      res.json({ statusCode: 401, message: "Bad auth from poliecies" });
-    res.error403 = () =>
-      res.json({ statusCode: 403, message: "Forbidden from poliecies" });
-    res.error404 = () =>
-      res.json({ statusCode: 404, message: "Not found docs" });
+    res.error400 = (message) => {
+      const errorMessage = `${req.method} ${
+        req.url
+      } 400 - ${new Date().toLocaleTimeString()} - ${message}`;
+      winston.ERROR(errorMessage);
+      return res.json({ statusCode: 400, message: message });
+    };
+    res.error401 = () => {
+      const errorMessage = `${req.method} ${
+        req.url
+      } 401 - ${new Date().toLocaleTimeString()} - Bad auth from poliecies}`;
+      winston.ERROR(errorMessage);
+      return res.json({ statusCode: 401, message: "Bad auth from poliecies" });
+    }
+    res.error403 = () => {
+      const errorMessage = `${req.method} ${req.url} 403 - ${new Date().toLocaleTimeString()} - Forbidden from poliecies`;
+      winston.ERROR(errorMessage);
+      return res.json({ statusCode: 403, message: "Forbidden from poliecies" });
+    }
+    res.error404 = () => {
+      const errorMessage = `${req.method} ${
+        req.url
+      } 404 - ${new Date().toLocaleTimeString()} - Not found docs`;
+      winston.ERROR(errorMessage);
+      return res.json({ statusCode: 404, message: "Not found docs" });
+    }
     return next();
+    }
   };
 
   policies = (policies) => async (req, res, next) => {
