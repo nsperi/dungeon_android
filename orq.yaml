@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: dungeon
+spec:
+  selector:
+    app: app
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dungeon
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: dungeon
+  template:
+    metadata:
+      labels:
+        app: dungeon
+    spec:
+      containers:
+      - name: app
+        image: nsperi/dungeon:1.0.0
+        ports:
+          - containerPort: 8080
+        imagePullPolicy: Always
